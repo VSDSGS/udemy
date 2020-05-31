@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Chelsea Market", cursive;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.browser {
+  height: 95vh;
+  width: 95vw;
+  background-color: silver;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1.1rem;
+  overflow: hidden;
+}
+
+.nav {
+  height: 6rem;
+  background-color: #e0dee0;
+  position: relative;
+  padding-left: 1.3rem;
+}
+
+.nav__circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  display: inline-block;
+  line-height: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav__circle--1 {
+  background-color: #fe5e57;
+}
+
+.nav__circle--2,
+.nav__circle--3 {
+  margin-left: 0.8rem;
+}
+
+.nav__circle--2 {
+  background-color: #fdbd2d;
+}
+
+.nav__circle--3 {
+  background-color: #26c73f;
+}
+
+.project-wrapper {
+  width: 15rem;
+  height: 15rem;
+  margin: 2rem;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.project-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px, inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+}
+
+.natours {
+  background-image: url(./Natours/img/hero.jpg);
+  background-size: cover;
+}
+
+.omnifood {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url(./Omnifood/resources/css/img/hero-min.jpg);
+  background-size: cover;
+}
+
+.project p {
+  color: #66cc75;
+  position: relative;
+  top: -0.2rem;
+  font-size: 2rem;
+}
+
+.project-image {
+  width: 10rem;
+  height: auto;
+}
+
+.natours p {
+  color: #66cc75;
+}
+
+.omnifood p {
+  color: #e67e22;
+}
